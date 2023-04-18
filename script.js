@@ -180,7 +180,7 @@ class UI {
         buttons.forEach(button => {
           if (parseInt(button.dataset.id) === id) {
             button.disabled = false;
-            button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
+            button.innerHTML = `<i class="fas fa-shopping-cart"></i>В корзину`;
           }
         });
       } else if (event.target.classList.contains("fa-chevron-up")) {
@@ -211,7 +211,7 @@ class UI {
           buttons.forEach(button => {
             if (parseInt(button.dataset.id) === id) {
               button.disabled = false;
-              button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
+              button.innerHTML = `<i class="fas fa-shopping-cart"></i>В корзину`;
             }
           });
         }
@@ -227,7 +227,7 @@ class UI {
     const buttons = [...document.querySelectorAll(".bag-btn")];
     buttons.forEach(button => {
       button.disabled = false;
-      button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
+      button.innerHTML = `<i class="fas fa-shopping-cart"></i>В корзину`;
     });
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);
@@ -282,4 +282,11 @@ cartOrder.addEventListener('click', e => {
 
 orderClose.addEventListener('click', e => {
   orderWrapper.classList.remove('active')
+})
+
+
+const authorize = document.querySelector('.navbar__authorize')
+const authorizeLogin = document.querySelector('.authorize__login')
+authorize.addEventListener('click', e => {
+  authorizeLogin.classList.add('active')
 })
