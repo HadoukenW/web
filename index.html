@@ -31,7 +31,24 @@
           <div class="cart-items">0</div>
         </div>
       </div>
+
+      <div class="navbar__authorize">Авторизироваться</div>
     </nav>
+
+    <form class="authorize__login">
+      <label class="authorize__label" for="">
+        Логин
+        <input type="text">
+      </label>
+      
+      <label class="authorize__label" for="">
+        Пароль
+        <input type="password">
+      </label>
+
+      <div class="nothaving__account">Зарегестрироваться</div>
+    </form>
+
     <!-- end of navbar -->
     <!-- hero -->
     <!-- <header class="hero">
@@ -50,8 +67,10 @@
       <div class="products-center">
         <div class="swiper">
           <div class="swiper-wrapper">
-            
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -150,7 +169,27 @@
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
+   // Default parameters
+   slidesPerView: 3,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
 })
     </script>
   </body>
