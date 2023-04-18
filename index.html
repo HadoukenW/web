@@ -21,32 +21,33 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="navbar-center">
-        <span class="nav-icon">
-          <i class="fas fa-bars"></i>
-        </span>
         <div class="cart-btn">
           <span class="nav-icon">
             <i class="fas fa-cart-plus"></i>
           </span>
           <div class="cart-items">0</div>
         </div>
+
+        <div class="navbar__authorize">Авторизироваться</div>
       </div>
 
-      <div class="navbar__authorize">Авторизироваться</div>
     </nav>
 
     <form class="authorize__login">
-      <label class="authorize__label" for="">
-        Логин
-        <input type="text">
-      </label>
-      
-      <label class="authorize__label" for="">
-        Пароль
-        <input type="password">
-      </label>
-
-      <div class="nothaving__account">Зарегестрироваться</div>
+        <div class="authorize__wrapper">
+            <svg class="authorize__close" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#000000" data-original="#000000" class=""></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#000000" data-original="#000000" class=""></path></g></svg>
+          <label class="authorize__label" for="">
+            Логин
+            <input type="text">
+          </label>
+          
+          <label class="authorize__label" for="">
+            Пароль
+            <input type="password">
+          </label>
+    
+          <div class="nothaving__account">Зарегестрироваться</div>
+        </div>
     </form>
 
     <!-- end of navbar -->
@@ -64,14 +65,18 @@
       <div class="section-title">
         <h2>Каталог</h2>
       </div>
+
+      <div class="tabs">
+        <div data-id="all" class="tab active">Всё</div>
+        <div data-id="drinks" class="tab">Напитки</div>
+        <div data-id="sandwiches" class="tab">Сэндвичи</div>
+        <div data-id="breadmade" class="tab">Хлебобулочка</div>
+        <div data-id="sweets" class="tab">Сладости</div>
+        <div data-id="cooked" class="tab">Готовое</div>
+      </div>
+
       <div class="products-center">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide"></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        
       </div>
     </section>
 
@@ -120,6 +125,7 @@
     <div class="order__wrapper">
       <svg class="order-close" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#000000" data-original="#000000" class="hovered-path"></path><path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#000000" data-original="#000000" class="hovered-path"></path></g></svg>
       <form class="order__form">
+        
         <label for="">Имя
           <input class="name__input" type="text">
         </label>
@@ -132,7 +138,7 @@
           <input class="email__input" type="email">
         </label>
 
-        <label for="">Имя договора
+        <label for="">Адрес
           <input class="deal__number" type="text">
         </label>
         <button class="order__send-btn">Отправить</button>
@@ -148,7 +154,7 @@
     <script src="/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
+    <script src="/tabs.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
     
