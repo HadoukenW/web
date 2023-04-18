@@ -25,10 +25,10 @@ class Products {
 
       let products = data.items;
       products = products.map(item => {
-        const { title, price, width, height } = item.fields;
+        const { title, price, width, height, category } = item.fields;
         const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, price, id, image, width, height};
+        return { title, price, id, image, width, height, category};
       });
 
       return products;
@@ -45,7 +45,7 @@ class UI {
     products.forEach(product => {
       result += `
    <!-- single product -->
-        <article class="product">
+        <article class="product ${product.category}">
           <div class="img-container">
             <img
               src=${product.image}
@@ -172,7 +172,6 @@ class UI {
         let id = removeItem.dataset.id;
         cart = cart.filter(item => item.id !== id);
         console.log(cart);
-
         this.setCartValues(cart);
         Storage.saveCart(cart);
         cartContent.removeChild(removeItem.parentElement.parentElement);
@@ -200,6 +199,7 @@ class UI {
           Storage.saveCart(cart);
           this.setCartValues(cart);
           lowerAmount.previousElementSibling.innerText = tempItem.amount;
+          
         } else {
           cart = cart.filter(item => item.id !== id);
           // console.log(cart);
@@ -287,6 +287,12 @@ orderClose.addEventListener('click', e => {
 
 const authorize = document.querySelector('.navbar__authorize')
 const authorizeLogin = document.querySelector('.authorize__login')
+const authorizeClose = document.querySelector('.authorize__close')
 authorize.addEventListener('click', e => {
   authorizeLogin.classList.add('active')
+})
+
+authorizeClose.addEventListener('click', e => {
+    authorizeLogin.classList.remove('active')
+
 })
