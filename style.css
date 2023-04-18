@@ -156,6 +156,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .banner-btn:hover {
@@ -503,7 +504,6 @@ body {
   transition: var(--mainTransition);
   cursor: pointer;
   margin-top: auto;
-  padding-top: 20px;
 }
 
 .cart__order.active {
