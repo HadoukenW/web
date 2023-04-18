@@ -192,6 +192,8 @@ body {
   transition: var(--mainTransition);
   transform: translateX(100%);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .showCart {
@@ -491,10 +493,6 @@ body {
 }
 
 .cart__order {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
   display: none;
   padding: 1rem 3rem;
   letter-spacing: var(--mainSpacing);
@@ -504,6 +502,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  margin-top: auto;
 }
 
 .cart__order.active {
@@ -516,6 +515,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 .order__wrapper {
@@ -556,7 +556,7 @@ body {
   max-width: 350px;
   padding: 15px 10px;
   outline: none;
-  border: 0;
+  border: 1px solid black;
   font-size: 1.3rem;
 }
 
