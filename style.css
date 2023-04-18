@@ -156,7 +156,6 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .banner-btn:hover {
@@ -581,4 +580,44 @@ body {
 
 .fg-price {
   margin-bottom: 15px;
+}
+
+.navbar__authorize {
+  padding-right: 15px;
+}
+
+.authorize__login {
+  width: 40%;
+  height: 60vh;
+  background-color: red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #ececec;
+  display: none;
+}
+.authorize__login.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.authorize__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.authorize__label input {
+  border: 1px solid black;
+  outline: none;
+  padding: 5px;
+}
+
+.nothaving__account {
+  margin-top: 25px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
