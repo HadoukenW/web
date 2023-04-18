@@ -503,6 +503,7 @@ body {
   transition: var(--mainTransition);
   cursor: pointer;
   margin-top: auto;
+  padding-top: 20px;
 }
 
 .cart__order.active {
