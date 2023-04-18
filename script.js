@@ -25,10 +25,10 @@ class Products {
 
       let products = data.items;
       products = products.map(item => {
-        const { title, price } = item.fields;
+        const { title, price, width, height } = item.fields;
         const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, price, id, image};
+        return { title, price, id, image, width, height};
       });
 
       return products;
@@ -51,14 +51,16 @@ class UI {
               src=${product.image}
               alt="product"
               class="product-img"
+              style="max-width: ${product.width}px; height: ${product.height}px"
             />
-            <button class="bag-btn" data-id=${product.id}>
-              <i class="fas fa-shopping-cart"></i>
-              Добавить
-            </button>
+            
           </div>
           <h3>${product.title}</h3>
-          <h4>${product.price} руб.</h4>
+          <h4 class="fg-price">${product.price} руб.</h4>
+          <button class="bag-btn" data-id=${product.id}>
+              <i class="fas fa-shopping-cart"></i>
+              В корзину
+            </button>
         </article>
         <!-- end of single product -->
    `;
@@ -109,6 +111,7 @@ class UI {
     div.classList.add("cart-item");
     div.innerHTML = `<!-- cart item -->
             <!-- item image -->
+            
             <img src=${item.image} alt="product" />
             <!-- item info -->
             <div>
@@ -124,6 +127,7 @@ class UI {
               </p>
                 <i class="fas fa-chevron-down" data-id=${item.id}></i>
             </div>
+                  
           <!-- cart item -->
     `;
     cartContent.appendChild(div);
