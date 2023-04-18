@@ -14,6 +14,8 @@
         "fields": {
           "title": "Сырная булочка",
           "price": 80,
+          "width": 235,
+          "height": 152,
           "image": { "fields": { "file": { "url": "./product-2.jpeg" } } }
         }
       },
@@ -22,6 +24,8 @@
         "fields": {
           "title": "Шоколадный батончик с кусочками арахиса",
           "price": 40,
+          "width": 235,
+          "height": 152,
           "image": { "fields": { "file": { "url": "./product-3.jpeg" } } }
         }
       },
@@ -30,6 +34,8 @@
         "fields": {
           "title": "Шоколадный батончик с кусочками арахиса",
           "price": 50,
+          "width": 235,
+          "height": 152,
           "image": { "fields": { "file": { "url": "./product-4.jpeg" } } }
         }
       },
@@ -38,6 +44,8 @@
         "fields": {
           "title": "Сэндвич из столовой",
           "price": 40,
+          "width": 240,
+          "height": 182,
           "image": { "fields": { "file": { "url": "./product-5.jpeg" } } }
         }
       },
@@ -46,6 +54,8 @@
         "fields": {
           "title": "Самса горячая",
           "price": 46,
+          "width": 240,
+          "height": 183,
           "image": { "fields": { "file": { "url": "./product-6.jpeg" } } }
         }
       },
@@ -54,6 +64,7 @@
         "fields": {
           "title": "Тоник Rich tonic",
           "price": 129,
+          "height": 157,
           "image": { "fields": { "file": { "url": "./product-7.jpeg" } } }
         }
       },
@@ -62,6 +73,8 @@
         "fields": {
           "title": "Банка Pepsi",
           "price": 56,
+          "width": 150,
+          "height": 150,
           "image": { "fields": { "file": { "url": "./product-8.jpeg" } } }
         }
       },
@@ -71,6 +84,7 @@
         "fields": {
           "title": "Шоколадная плитка Россия щедрая душа",
           "price": 35,
+          "height": 193,
           "image": { "fields": { "file": { "url": "./product-9.jpeg" } } }
         }
       },
@@ -80,6 +94,8 @@
         "fields": {
           "title": "Сэндвич М-Кухня ветчина сыр",
           "price": 150,
+          "width": 147,
+          "height": 193,
           "image": { "fields": { "file": { "url": "./product-10.jpeg" } } }
         }
       },
@@ -97,6 +113,8 @@
         "fields": {
           "title": "Творожок Активиа с малиной",
           "price": 46,
+          "width": 200,
+          "height": 200,
           "image": { "fields": { "file": { "url": "./product-12.jpeg" } } }
         }
       },
@@ -106,6 +124,8 @@
         "fields": {
           "title": "Десерт Lucky Days/Моя Цена многослойный с фруктовым соком",
           "price": 48,
+          "width": 155,
+          "height": 163,
           "image": { "fields": { "file": { "url": "./product-13.jpeg" } } }
         }
       },
@@ -115,6 +135,8 @@
         "fields": {
           "title": "Корм для кошек WHISKAS, в ассортименте, 350г",
           "price": 31,
+          "width": 150,
+          "height": 157,
           "image": { "fields": { "file": { "url": "./product-14.jpeg" } } }
         }
       },
@@ -124,6 +146,8 @@
         "fields": {
           "title": "Мармелад Семейные секреты",
           "price": 124,
+          "width": 222,
+          "height": 161,
           "image": { "fields": { "file": { "url": "./product-15.jpeg" } } }
         }
       },
@@ -133,6 +157,8 @@
         "fields": {
           "title": "Чистая питьевая вода в бутылке Bon Aqua",
           "price": 89,
+          "width": 51,
+          "height": 174,
           "image": { "fields": { "file": { "url": "./product-16.jpeg" } } }
         }
       },
@@ -142,6 +168,8 @@
         "fields": {
           "title": "Хлебные палочки Saltletts Классические соленые",
           "price": 54,
+          "width": 228,
+          "height": 193,
           "image": { "fields": { "file": { "url": "./product-17.jpeg" } } }
         }
       },
