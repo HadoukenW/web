@@ -123,7 +123,7 @@
         "sys": { "id": "15" },
         "fields": {
           "title": "Мармелад Семейные секреты",
-          "price": 123,
+          "price": 124,
           "image": { "fields": { "file": { "url": "./product-15.jpeg" } } }
         }
       },
@@ -131,8 +131,8 @@
       {
         "sys": { "id": "16" },
         "fields": {
-          "title": "Сэндвич М-Кухня ветчина сыр",
-          "price": 150,
+          "title": "Чистая питьевая вода в бутылке Bon Aqua",
+          "price": 89,
           "image": { "fields": { "file": { "url": "./product-16.jpeg" } } }
         }
       },
@@ -149,8 +149,8 @@
       {
         "sys": { "id": "18" },
         "fields": {
-          "title": "Творожок Активиа с малиной",
-          "price": 46,
+          "title": "Салат Ярославна",
+          "price": 100,
           "image": { "fields": { "file": { "url": "./product-18.jpeg" } } }
         }
       }
