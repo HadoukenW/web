@@ -232,6 +232,8 @@ body {
 .cart-item img {
   width: 75px;
   height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .cart-item h4 {
@@ -307,6 +309,7 @@ body {
   padding-right: 5px;
   padding-bottom: 10px;
   max-width: 240px;
+  padding-top: 10px;
 }
 .products-center article:nth-child(1) {
   position: relative;
@@ -443,22 +446,14 @@ body {
 }
 
 .bag-btn {
-  position: absolute;
-  top: 70%;
-  right: 0;
-  background: var(--primaryColor);
+  background: rgb(251, 192, 45);
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
-  transition: var(--mainTransition);
-  transform: translateX(101%);
   cursor: pointer;
-}
-
-.bag-btn:hover {
-  color: var(--mainWhite);
+  margin-top: auto;
 }
 
 .fa-shopping-cart {
@@ -470,11 +465,8 @@ body {
 }
 
 .product-img {
-  display: block;
   width: 100%;
   transition: var(--mainTransition);
-  width: 240px;
-  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -584,4 +576,8 @@ body {
 .swiper {
   width: 600px;
   height: 300px;
+}
+
+.fg-price {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
