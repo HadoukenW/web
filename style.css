@@ -82,7 +82,6 @@ body {
 /* --------------- Navbar ---------------- */
 .navbar {
   background: var(--mainWhite);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 60px;
@@ -156,6 +155,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .banner-btn:hover {
@@ -502,7 +502,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
-  margin-top: auto;
+  margin: auto auto 0 auto;
 }
 
 .cart__order.active {
@@ -515,7 +515,6 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
-  cursor: pointer;
 }
 
 .order__wrapper {
@@ -582,42 +581,98 @@ body {
   margin-bottom: 15px;
 }
 
-.navbar__authorize {
-  padding-right: 15px;
-}
-
 .authorize__login {
-  width: 40%;
-  height: 60vh;
-  background-color: red;
-  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  position: fixed;
+  width: 50%;
+  height: 60vh;
   background-color: #ececec;
+  z-index: 10;
   display: none;
 }
 .authorize__login.active {
+  display: block;
+}
+
+.authorize__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   flex-direction: column;
+}
+
+.authorize__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
 }
 
 .authorize__label {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .authorize__label input {
-  border: 1px solid black;
+  padding: 10px;
   outline: none;
-  padding: 5px;
 }
 
 .nothaving__account {
-  margin-top: 25px;
+  margin-top: 15px;
   cursor: pointer;
+}
+
+.navbar__authorize {
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.tabs .tab {
+  background-color: rgb(255, 224, 178);
+  max-width: 157px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: rgb(117, 117, 117) 1px solid;
+  cursor: pointer;
+}
+.tabs .tab.active {
+  background-color: rgb(255, 183, 77);
+}
+
+.product:nth-child(1), .product:nth-child(7), .product:nth-child(8), .product:nth-child(11) {
+  background: rgb(224, 242, 241);
+}
+.product:nth-child(2), .product:nth-child(3), .product:nth-child(4) {
+  background: rgb(255, 243, 224);
+}
+.product:nth-child(14), .product:nth-child(13) {
+  background: rgb(232, 245, 233);
+}
+.product:nth-child(15), .product:nth-child(9) {
+  background: rgb(255, 253, 231);
+}
+.product:nth-child(12) {
+  background: rgb(178, 223, 219);
+}
+.product:nth-child(16) {
+  background-color: rgb(225, 245, 254);
+}
+.product:nth-child(17), .product:nth-child(18), .product:nth-child(10), .product:nth-child(5), .product:nth-child(6) {
+  background-color: rgb(255, 224, 178);
+}
+.product.active {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
