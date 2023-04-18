@@ -1,0 +1,158 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "sale": "ye",
+          "title": "Сладкий газированный напиток",
+          "price": 100,
+          "image": { "fields": { "file": { "url": "./product-1.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Сырная булочка",
+          "price": 80,
+          "image": { "fields": { "file": { "url": "./product-2.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Шоколадный батончик с кусочками арахиса",
+          "price": 40,
+          "image": { "fields": { "file": { "url": "./product-3.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Шоколадный батончик с кусочками арахиса",
+          "price": 50,
+          "image": { "fields": { "file": { "url": "./product-4.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Сэндвич из столовой",
+          "price": 40,
+          "image": { "fields": { "file": { "url": "./product-5.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Самса горячая",
+          "price": 46,
+          "image": { "fields": { "file": { "url": "./product-6.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Тоник Rich tonic",
+          "price": 129,
+          "image": { "fields": { "file": { "url": "./product-7.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Банка Pepsi",
+          "price": 56,
+          "image": { "fields": { "file": { "url": "./product-8.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Шоколадная плитка Россия щедрая душа",
+          "price": 35,
+          "image": { "fields": { "file": { "url": "./product-9.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Сэндвич М-Кухня ветчина сыр",
+          "price": 150,
+          "image": { "fields": { "file": { "url": "./product-10.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "11" },
+        "fields": {
+          "title": "Биойогурт Активиа с вишней",
+          "price": 54,
+          "image": { "fields": { "file": { "url": "./product-11.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "12" },
+        "fields": {
+          "title": "Творожок Активиа с малиной",
+          "price": 46,
+          "image": { "fields": { "file": { "url": "./product-12.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "13" },
+        "fields": {
+          "title": "Десерт Lucky Days/Моя Цена многослойный с фруктовым соком",
+          "price": 48,
+          "image": { "fields": { "file": { "url": "./product-13.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "14" },
+        "fields": {
+          "title": "Корм для кошек WHISKAS, в ассортименте, 350г",
+          "price": 31,
+          "image": { "fields": { "file": { "url": "./product-14.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "15" },
+        "fields": {
+          "title": "Мармелад Семейные секреты",
+          "price": 123,
+          "image": { "fields": { "file": { "url": "./product-15.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "16" },
+        "fields": {
+          "title": "Сэндвич М-Кухня ветчина сыр",
+          "price": 150,
+          "image": { "fields": { "file": { "url": "./product-16.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "17" },
+        "fields": {
+          "title": "Хлебные палочки Saltletts Классические соленые",
+          "price": 54,
+          "image": { "fields": { "file": { "url": "./product-17.jpeg" } } }
+        }
+      },
+
+      {
+        "sys": { "id": "18" },
+        "fields": {
+          "title": "Творожок Активиа с малиной",
+          "price": 46,
+          "image": { "fields": { "file": { "url": "./product-18.jpeg" } } }
+        }
+      }
+    ]
+  }
