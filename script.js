@@ -288,11 +288,24 @@ orderClose.addEventListener('click', e => {
 const authorize = document.querySelector('.navbar__authorize')
 const authorizeLogin = document.querySelector('.authorize__login')
 const authorizeClose = document.querySelector('.authorize__close')
+const body = document.querySelector('body')
 authorize.addEventListener('click', e => {
   authorizeLogin.classList.add('active')
+  body.style.overflow = 'hidden'
 })
 
 authorizeClose.addEventListener('click', e => {
     authorizeLogin.classList.remove('active')
+    body.style.overflow = 'unset'
+})
 
+const singingIn = document.querySelector('.nothaving__account')
+const signingInForm = document.querySelector('.signingIn__form')
+const singingInArrow = document.querySelector('.singingIn__arrow')
+singingIn.addEventListener('click', e => {
+  signingInForm.classList.add('active')
+})
+
+singingInArrow.addEventListener('click', e => {
+  signingInForm.classList.remove('active')
 })
