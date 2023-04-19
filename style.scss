@@ -591,13 +591,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
-    width: 50%;
+    max-width: 750px;
+    width: 95%;
     height: 60vh;
     background-color: #ececec;
     z-index: 10;
     display: none;
+    padding: 15px;
+    margin: 0 auto;
     &.active {
         display: block;
+    }
+
+    @media(max-width: 767px) {
+      width: 95%;
+      height: 40vh;
     }
 }
 
@@ -609,6 +617,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 .authorize__close {
@@ -624,14 +633,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: 525px;
+    font-size: clamp(24px, 2vw, 32px);
     input {
         padding: 10px;
         outline: none;
+        
     }
 }
 .nothaving__account {
     margin-top: 15px;
     cursor: pointer;
+    font-size: clamp(24px, 2vw, 28px);
 }
 .navbar__authorize {
     cursor: pointer;
