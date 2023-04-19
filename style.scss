@@ -292,6 +292,30 @@ body {
     padding-bottom: 10px;
     max-width: 240px;
     padding-top: 10px;
+
+    @media(max-width: 800px) {
+      display: flex;
+      flex: 0 1 45%;
+      max-width: unset;
+      img {
+        max-width: 100%;
+        max-height: 175px;
+        height: auto !important;
+      }
+    }
+
+    @media(max-width: 600px) {
+      display: flex;
+      flex: 0 1 100%;
+      max-width: unset;
+      img {
+        max-width: 100%;
+        max-height: 175px;
+        height: auto !important;
+      }
+    }
+
+
     &:nth-child(1) {
         position: relative;
         &::after {
@@ -617,6 +641,8 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 0 15px;
     .tab {
         background-color: rgb(255, 224, 178);
         max-width: 157px;
@@ -632,6 +658,14 @@ body {
     }
 }
 .product {
+
+
+
+
+    transition: .3s ease transform;
+    &:hover {
+      transform: translateY(-5px);
+    }
 
     &:nth-child(1), &:nth-child(7), &:nth-child(8), &:nth-child(11) {
         background: rgb(224, 242, 241);
